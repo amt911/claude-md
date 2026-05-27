@@ -91,3 +91,9 @@ Rules:
 - **TDD by default** for new logic. Don't merge logic without tests.
 - **Don't lower the coverage gate** — exclude with justification instead.
 - **[Add project-specific rules here]**
+
+## Git & GitHub
+
+- **Commits and branches OK** — create commits and new branches whenever it makes sense, without asking first.
+- **Never push** — no `git push` under any circumstance, and absolutely never `git push --force` / `--force-with-lease`. Leave pushing to the user.
+- **GitHub via `gh`** — if the `gh` CLI is available, you may open pull requests, issues, and similar (comments, labels, etc.). These don't require pushing on your part beyond what `gh` itself does for an already-pushed branch.
