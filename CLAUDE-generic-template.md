@@ -18,6 +18,16 @@ Outputs in `graphify-out/`: `graph.json` (source of truth), `GRAPH_REPORT.md` (g
 
 Run `/graphify --update` at end of session if you touched docs or images (code changes rebuild via hook if installed).
 
+## ⚡ superpowers — use whenever applicable
+
+Always prefer **superpowers** skills over ad-hoc approaches. If there's even a small chance a skill applies to the task, invoke it via the `Skill` tool before acting (including before clarifying questions).
+
+- **Process skills first** — `brainstorming` before creative/feature work, `systematic-debugging` before fixing bugs, `test-driven-development` before writing implementation.
+- **Then implementation skills** — domain-specific skills guide execution.
+- **Verify before claiming done** — `verification-before-completion` / `requesting-code-review` before merging.
+
+User instructions always take precedence over skills; skills override default behavior.
+
 ## Stack
 
 - **[Runtime/Framework]** vX.Y — [brief role]
@@ -87,6 +97,7 @@ Rules:
 
 ## Working rules
 
+- **Use superpowers skills whenever they apply** — invoke via `Skill` before acting; process skills before implementation skills.
 - **Don't install packages without asking** — the stack is intentional.
 - **TDD by default** for new logic. Don't merge logic without tests.
 - **Don't lower the coverage gate** — exclude with justification instead.
