@@ -28,6 +28,10 @@ Always prefer **superpowers** skills over ad-hoc approaches. If there's even a s
 
 User instructions always take precedence over skills; skills override default behavior.
 
+### Token-saving switch
+
+Saying **"lite mode"** turns off the automatic "check if a skill applies" step before every response (that check is the main token cost). While in lite mode: skills can still be used if explicitly requested by name or via `/skill-name`, but skip the proactive applicability check. Saying **"normal mode"** restores default superpowers behavior. Confirm the switch briefly when it happens.
+
 ## Stack
 
 - **[Runtime/Framework]** vX.Y — [brief role]

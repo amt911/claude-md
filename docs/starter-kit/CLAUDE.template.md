@@ -29,6 +29,14 @@ Flujo: `brainstorming -> spec (lo apruebas) -> writing-plans -> plan (lo aprueba
 subagent-driven-development -> finishing-a-development-branch`. **Nada se implementa sin
 spec aprobado.**
 
+### Interruptor de ahorro de tokens
+
+Decir **"modo ligero"** desactiva el chequeo automático de "¿aplica algún skill?" antes de
+cada respuesta (ese chequeo es el coste principal en tokens). En modo ligero los skills se
+siguen pudiendo usar si se piden explícitamente por nombre o con `/skill`, pero sin el
+chequeo proactivo en cada turno. Decir **"modo normal"** restaura el comportamiento
+estándar de superpowers. Confirma brevemente el cambio de modo cuando ocurra.
+
 ---
 
 ## Estrategia de módulos (fuente de verdad — no desviarse)
